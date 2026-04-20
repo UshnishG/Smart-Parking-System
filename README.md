@@ -183,9 +183,9 @@ Create `web/backend/.env`:
 
 ```env
 MONGO_URL="mongodb://localhost:27017"
-DB_NAME="smart_parking"
+DB_NAME="test_database"
 CORS_ORIGINS="*"
-JWT_SECRET="change-me"
+JWT_SECRET="replace-with-a-long-random-secret-key"
 ADMIN_EMAIL="admin@smartpark.com"
 ADMIN_PASSWORD="admin123"
 ```
