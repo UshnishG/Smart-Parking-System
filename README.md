@@ -190,6 +190,8 @@ ADMIN_EMAIL="admin@smartpark.com"
 ADMIN_PASSWORD="admin123"
 ```
 
+Security note: generate `JWT_SECRET` using a cryptographically random value (for example, `openssl rand -hex 32`) and never commit real secrets to version control.
+
 Start server:
 
 ```bash
@@ -233,7 +235,7 @@ Default seeded admin (if DB empty):
 
 - no comprehensive automated test suite in repository
 - payment is simulation-oriented (not full gateway completion lifecycle)
-- cookie security flags are local-dev friendly (`secure=False`)
+- cookie security flags are local-dev friendly (`secure=False`) and are unsafe for production because cookies can be sent over unencrypted HTTP
 - reservation/slot assignment logic can be expanded for advanced optimization
 - deployment, observability, and role-based access can be hardened further
 
