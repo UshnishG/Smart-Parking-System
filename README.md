@@ -172,7 +172,7 @@ Realtime channel:
 ### Backend setup
 
 ```bash
-cd /home/runner/work/Smart-Parking-System/Smart-Parking-System/web/backend
+cd web/backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirement.txt
@@ -243,8 +243,8 @@ Default seeded admin (if DB empty):
 
 For case-study references, also review:
 
-- `/home/runner/work/Smart-Parking-System/Smart-Parking-System/documentation/ProjectReport.pdf`
-- `/home/runner/work/Smart-Parking-System/Smart-Parking-System/documentation/UMLdiagram.pdf`
+- `documentation/ProjectReport.pdf`
+- `documentation/UMLdiagram.pdf`
 
 ---
 
