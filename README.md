@@ -105,7 +105,7 @@ Smart-Parking-System/
 └── web/
     ├── backend/
     │   ├── server.py         # Main backend (Flask + Socket.IO + ASGI)
-    │   ├── parking_system.cpp# C++ utility library source
+    │   ├── parking_system.cpp # C++ utility library source
     │   ├── wsgi.py
     │   └── requirement.txt
     └── frontend/
@@ -235,7 +235,7 @@ Default seeded admin (if DB empty):
 
 - no comprehensive automated test suite in repository
 - payment is simulation-oriented (not full gateway completion lifecycle)
-- cookie security flags are local-dev friendly (`secure=False`), but production deployments must set `secure=True` to prevent cookies from traveling over unencrypted HTTP
+- cookie security flags are local-dev friendly (`secure=False`), but production deployments must set `secure=True` and keep `httpOnly`/`sameSite` policies appropriately strict to reduce interception, XSS, and CSRF risk
 - reservation/slot assignment logic can be expanded for advanced optimization
 - deployment, observability, and role-based access can be hardened further
 
